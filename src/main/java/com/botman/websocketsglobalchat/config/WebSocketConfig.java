@@ -27,3 +27,6 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
                 .withSockJS();//fallback for older browsers
     }
 }
+
+//and why STOMP? It abstracts raw WebSocket frames into named destinations like /app/message, or /topic/room
+//it makes it easier to organize messaging channels
